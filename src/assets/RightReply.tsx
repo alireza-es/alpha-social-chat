@@ -1,3 +1,5 @@
+import React from "react";
+
 export const RightReply: React.FC = () => (
   <svg
     width='17'

@@ -1,3 +1,4 @@
+import React from 'react';
 import './LoadingWireframe.scss';
 
 export const LoadingWireframe = () => {

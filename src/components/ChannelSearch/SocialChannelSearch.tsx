@@ -4,7 +4,7 @@ import { ChannelSearch, SearchInputProps, useChatContext } from 'stream-chat-rea
 import { ClearSearch, SearchIcon } from '../../assets';
 import { SearchResultItem } from './SearchResultItem';
 
-import {
+import type {
   SocialAttachmentType,
   SocialChannelType,
   SocialCommandType,

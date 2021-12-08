@@ -1,3 +1,4 @@
+import React from 'react';
 import { useTheme } from '../hooks/useTheme';
 
 export const ThemeIcon: React.FC = () => {

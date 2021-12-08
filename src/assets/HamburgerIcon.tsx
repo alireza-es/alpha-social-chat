@@ -1,3 +1,5 @@
+import React from "react";
+
 import { useViewContext } from '../contexts/ViewContext';
 
 export const HamburgerIcon: React.FC = () => {

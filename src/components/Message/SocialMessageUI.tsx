@@ -25,7 +25,7 @@ import {
   SendAlso,
 } from '../../assets';
 
-import {
+import type {
   SocialAttachmentType,
   SocialChannelType,
   SocialCommandType,
@@ -50,6 +50,7 @@ import { EditInput } from '../MessageInput/EditInput';
 import { useActionsContext } from '../../contexts/ActionsContext';
 
 import './SocialMessageUI.scss';
+import React from 'react';
 
 type OptionsProps = {
   dropdownOpen: boolean;

@@ -6,7 +6,7 @@ import { Chats, Files, Photos } from '../../assets';
 
 import { useViewContext } from '../../contexts/ViewContext';
 
-import {
+import type {
   SocialAttachmentType,
   SocialChannelType,
   SocialCommandType,
@@ -17,6 +17,7 @@ import {
 } from '../ChatContainer/ChatContainer';
 
 import './ChatInfoItem.scss';
+import React from 'react';
 
 export const ChatInfoItem = () => {
   const { channel } = useChannelStateContext<

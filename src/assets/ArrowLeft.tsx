@@ -1,3 +1,4 @@
+import React from "react";
 import { useViewContext } from '../contexts/ViewContext';
 
 export const ArrowLeft: React.FC = () => {

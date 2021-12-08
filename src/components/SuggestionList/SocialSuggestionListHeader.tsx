@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SuggestionListHeaderProps } from 'stream-chat-react';
+import type { SuggestionListHeaderProps } from 'stream-chat-react';
 
 import { CommandBolt } from '../../assets';
 

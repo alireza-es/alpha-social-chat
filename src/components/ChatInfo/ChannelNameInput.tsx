@@ -1,3 +1,5 @@
+import React from "react";
+
 type Props = {
   channelName?: string;
   setChannelName: (value: React.SetStateAction<string | undefined>) => void;

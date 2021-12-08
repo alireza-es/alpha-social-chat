@@ -1,3 +1,4 @@
+import React from 'react';
 import { BlankAvatar } from '../../assets/BlankAvatar';
 
 export const NewChatPreview = () => {

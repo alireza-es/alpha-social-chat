@@ -1,3 +1,5 @@
+import React from "react";
+
 export const ConnectionStatusError: React.FC = () => (
   <svg
     style={{ marginLeft: '-8px' }}

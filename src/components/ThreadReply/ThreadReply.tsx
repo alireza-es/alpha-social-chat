@@ -1,3 +1,4 @@
+import React from 'react';
 import { Avatar, MessageRepliesCountButton, useMessageContext } from 'stream-chat-react';
 import { LeftReply, RightReply } from '../../assets';
 

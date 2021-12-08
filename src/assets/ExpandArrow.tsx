@@ -1,3 +1,5 @@
+import React from "react";
+
 import { ChatInfoItem, useViewContext } from '../contexts/ViewContext';
 
 type Props = {

@@ -1,8 +1,6 @@
 import React from "react";
 
-import { TestComponentProps } from "./TestComponent.types";
-
-import "./TestComponent.scss";
+import type { TestComponentProps } from "./TestComponent.types";
 
 const TestComponent: React.FC<TestComponentProps> = ({ heading, content }) => (
   <div data-testid="test-component" className="test-component">

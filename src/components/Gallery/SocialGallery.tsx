@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import { GalleryProps } from 'stream-chat-react';
+import type { GalleryProps } from 'stream-chat-react';
 
 import { SocialModalWrapper } from './SocialModal';
 
-import { SocialAttachmentType } from '../ChatContainer/ChatContainer';
+import type { SocialAttachmentType } from '../ChatContainer/ChatContainer';
 
 export const SocialGallery: React.FC<GalleryProps<SocialAttachmentType>> = (props) => {
   const { images } = props;

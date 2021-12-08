@@ -4,7 +4,6 @@ import { ImageDropzone } from 'react-file-utils';
 import {
   ChatAutoComplete,
   EmojiPicker,
-  MessageInputProps,
   UploadsPreview,
   useMessageInputContext,
   useChannelStateContext,
@@ -14,13 +13,8 @@ import { EmojiPickerIcon, QuoteArrow, SendCheck } from '../../assets';
 
 import './SocialMessageInput.scss';
 
-type Props = MessageInputProps & {
-  checked?: boolean;
-  setChecked?: React.Dispatch<React.SetStateAction<boolean>>;
-  threadInput?: boolean;
-};
 
-export const EditInput = (props: Props) => {
+export const EditInput = () => {
   const {
     emojiPickerRef,
     handleChange,

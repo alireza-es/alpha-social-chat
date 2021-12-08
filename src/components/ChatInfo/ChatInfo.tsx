@@ -19,7 +19,7 @@ import {
   UserInfo,
 } from '../../assets';
 
-import {
+import type {
   SocialAttachmentType,
   SocialChannelType,
   SocialCommandType,
@@ -30,6 +30,7 @@ import {
 } from '../ChatContainer/ChatContainer';
 
 import './ChatInfo.scss';
+import React from 'react';
 
 export const ChatInfo = () => {
   const { client } = useChatContext();

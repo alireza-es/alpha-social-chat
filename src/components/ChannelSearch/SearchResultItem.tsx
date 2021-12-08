@@ -1,5 +1,6 @@
 import Dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
+import React from 'react';
 import {
   Avatar,
   getDisplayTitle,
@@ -11,7 +12,7 @@ import {
 } from 'stream-chat-react';
 
 import { AvatarGroup, getTimeStamp } from '../ChannelPreview/utils';
-import { SocialUserType } from '../ChatContainer/ChatContainer';
+import type { SocialUserType } from '../ChatContainer/ChatContainer';
 
 import './SocialChannelSearch.scss';
 

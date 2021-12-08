@@ -1,5 +1,5 @@
 import React from 'react';
-import { SuggestionCommand, SuggestionItemProps, SuggestionUser } from 'stream-chat-react';
+import type { SuggestionCommand, SuggestionItemProps, SuggestionUser } from 'stream-chat-react';
 
 import { Ban, Flag, Giphy, Mute, Unban, Unmute } from '../../assets';
 

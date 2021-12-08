@@ -5,7 +5,7 @@ import { MessageInput, MessageList, useChatContext, Window } from 'stream-chat-r
 import { ChatInfo } from '../ChatInfo/ChatInfo';
 import { NewChat } from '../NewChat/NewChat';
 import { SocialChannelHeader } from '../ChannelHeader/SocialChannelHeader';
-import {
+import type {
   SocialAttachmentType,
   SocialChannelType,
   SocialCommandType,

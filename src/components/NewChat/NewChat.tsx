@@ -4,7 +4,7 @@ import type { UserResponse } from 'stream-chat';
 import _debounce from 'lodash/debounce';
 
 import { NewChatUser } from './NewChatUser';
-import { SocialUserType } from '../ChatContainer/ChatContainer';
+import type { SocialUserType } from '../ChatContainer/ChatContainer';
 import { AddChat } from '../../assets';
 
 import { useViewContext } from '../../contexts/ViewContext';

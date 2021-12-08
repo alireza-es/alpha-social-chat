@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ChannelMemberResponse } from 'stream-chat';
+import type { ChannelMemberResponse } from 'stream-chat';
 import { useChatContext } from 'stream-chat-react';
 
 import { MuteUser, Trashcan, UserInfo } from '../../assets';
 
-import { SocialUserType } from '../ChatContainer/ChatContainer';
+import type { SocialUserType } from '../ChatContainer/ChatContainer';
 
 import { UserActions, useActionsContext } from '../../contexts/ActionsContext';
 

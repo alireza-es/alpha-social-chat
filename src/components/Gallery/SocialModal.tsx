@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { createPortal } from 'react-dom';
-import { ModalWrapperProps } from 'stream-chat-react';
+import type { ModalWrapperProps } from 'stream-chat-react';
 
 import { CloseXCircle } from '../../assets';
 

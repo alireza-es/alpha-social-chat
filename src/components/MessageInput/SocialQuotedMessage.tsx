@@ -1,3 +1,4 @@
+import React from 'react';
 import { Avatar, useChannelActionContext, useComponentContext } from 'stream-chat-react';
 
 export const SocialQuotedMessageHeader = () => {

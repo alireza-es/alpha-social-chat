@@ -1,3 +1,4 @@
+import React from 'react';
 import { Avatar, useChatContext } from 'stream-chat-react';
 
 import { NewDirectMessage, NewGroupMessage, ThemeIcon } from '../../assets';

@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Mentions: React.FC = () => (
   <svg
     width='25'

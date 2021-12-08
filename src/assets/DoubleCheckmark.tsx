@@ -1,3 +1,5 @@
+import React from "react";
+
 export const DoubleCheckmark: React.FC = () => (
   <div style={{ alignSelf: 'center', display: 'flex', flexDirection: 'row' }}>
     <svg

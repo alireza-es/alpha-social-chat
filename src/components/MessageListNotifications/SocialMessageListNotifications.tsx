@@ -1,7 +1,8 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 import { useChatContext } from 'stream-chat-react';
-import { MessageListNotificationsProps } from '../../../node_modules/stream-chat-react/dist/components/MessageList/MessageListNotifications';
+import type { MessageListNotificationsProps } from '../../../node_modules/stream-chat-react/dist/components/MessageList/MessageListNotifications';
 
 import { ConnectionStatusError } from '../../assets';
 

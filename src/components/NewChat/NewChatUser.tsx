@@ -2,11 +2,12 @@ import Dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 
 import { Avatar } from 'stream-chat-react';
-import { UserResponse } from 'stream-chat';
+import type { UserResponse } from 'stream-chat';
 
-import { SocialUserType } from '../ChatContainer/ChatContainer';
+import type { SocialUserType } from '../ChatContainer/ChatContainer';
 
 import './NewChatUser.scss';
+import React from 'react';
 
 type Props<SocialUserType> = {
   user: UserResponse<SocialUserType> | undefined;

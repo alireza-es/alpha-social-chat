@@ -1,9 +1,10 @@
 import type { Channel, ChannelMemberResponse } from 'stream-chat';
 import { Avatar } from 'stream-chat-react';
 
-import { SocialUserType } from '../ChatContainer/ChatContainer';
+import type { SocialUserType } from '../ChatContainer/ChatContainer';
 
 import { BlankAvatar } from '../../assets';
+import React from 'react';
 
 type Props<SocialUserType> = {
   members: ChannelMemberResponse<SocialUserType>[] | undefined;

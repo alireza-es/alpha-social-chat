@@ -1,13 +1,13 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
+  "name": "alpha-social-chat",
+  "version": "1.0.21",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "A social chat components based on get stream chat",
   "scripts": {
     "build": "rollup -c",
     "test": "jest",

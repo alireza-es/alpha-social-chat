@@ -71,7 +71,7 @@ export const SocialSuggestionList = React.forwardRef(
 
     const { description, Icon } = getCommandIcon(item.name);
 
-    const itemName = isEmojiOrMention(item) ? item.name || item.id : item.name;
+    const itemName = isEmojiOrMention(item) ? item.name || item.id : 'item.name:fix it';
     const displayText = isEmoji(item) ? `${item.native} ${itemName}` : itemName;
 
     return (

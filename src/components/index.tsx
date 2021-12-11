@@ -10,7 +10,7 @@ export * from "./ChannelSearch/SearchResultItem";
 export * from "./ChatContainer/ChatContainer";
 export * from "./ChatInfo/ChannelNameInput";
 export * from "./ChatInfo/ChatInfo";
-export * from "./ChatInfo/ChatInfoItem";
+// export * from "./ChatInfo/ChatInfoItem";
 export * from "./EmptyStateIndicator/SocialEmptyStateIndicator";
 export * from "./Gallery/SocialGallery";
 export * from "./Gallery/SocialModal";

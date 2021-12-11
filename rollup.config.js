@@ -22,7 +22,6 @@ process.env.NODE_ENV = "production";
 
 const baseConfig = {
   cache: false,
-  inlineDynamicImports: true,
   input: "src/index.ts",
   watch: {
     chokidar: false,
@@ -88,6 +87,10 @@ const basePlugins = [
     targets: [
       { dest: "dist/assets", src: "src/assets/*" },
       {
+        dest: "dist/assets",
+        src: "./node_modules/stream-chat-react/dist/assets/*",
+      },
+      {
         dest: "dist/css",
         src: "./node_modules/stream-chat-css/dist/css/index.css",
       },
@@ -107,57 +110,15 @@ const normalBundle = {
   external: externalDependencies,
   output: [
     {
-      file: pkg.main,
-      format: "cjs",
+      dir: "dist",
+      format: "esm",
+      preserveModules: true,
+      preserveModulesRoot: "src",
       sourcemap: true,
     },
   ],
   plugins: [...basePlugins],
 };
 
-const fullBrowserBundle = ({ min } = { min: false }) => ({
-  ...baseConfig,
-  output: [
-    {
-      file: min ? pkg.jsdelivr : pkg.jsdelivr.replace(".min", ""),
-      format: "iife",
-      globals: {
-        react: "React",
-        "react-dom": "ReactDOM",
-        "stream-chat": "StreamChat",
-      },
-      name: "StreamChatReact", // write all exported values to window under key StreamChatReact
-      sourcemap: true,
-    },
-  ],
-  plugins: [
-    ...basePlugins,
-    {
-      load: (id) => (id.match(/.s?css$/) ? "" : null),
-      name: "ignore-css-and-scss",
-      resolveId: (importee) => (importee.match(/.s?css$/) ? importee : null),
-    },
-    builtins(),
-    resolve({
-      browser: true,
-    }),
-    globals({
-      buffer: false,
-      dirname: false,
-      filename: false,
-      globals: false,
-      process: true,
-    }),
-    // To work with globals rollup expects them to be namespaced, which is not the case with stream-chat.
-    // This injects some code to define stream-chat globals as expected by rollup.
-    prepend(
-      "window.StreamChat.StreamChat=StreamChat;window.StreamChat.logChatPromiseExecution=logChatPromiseExecution;window.StreamChat.Channel=Channel;window.ICAL=window.ICAL||{};"
-    ),
-    min ? terser() : null,
-  ],
-});
-
 export default () =>
-  process.env.ROLLUP_WATCH
-    ? [normalBundle]
-    : [normalBundle, fullBrowserBundle({ min: true }), fullBrowserBundle()];
+    [normalBundle];
